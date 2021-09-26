@@ -7,10 +7,20 @@
 
 import SwiftUI
 
+// https://random.imagecdn.app/500.500
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Image(systemName: "photo")
+                    .resizable()
+                    .foregroundColor(Color.pink)
+                    .frame(width: 300, height: 300)
+                
+            }
+            .navigationTitle("Photo Mania")
+        }
     }
 }
 
